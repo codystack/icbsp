@@ -194,6 +194,7 @@ p {
   font-weight: normal;
 }
 
+
 /* line 35, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
 .bg-img-1 {
   background-image: url(../img/slider/slider-img-1.jpg);
@@ -3203,7 +3204,7 @@ hr {
 @media (max-width: 575px) {
   /* line 3, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
   .header-area .header-bottom {
-    padding: 17px 0px;
+    padding: 0px 0px;
   }
 }
 
@@ -3501,7 +3502,7 @@ hr {
   height: 100%;
   left: 0;
   top: 0;
-  background: #000;
+  background: #095998;
   z-index: 99999;
 }
 
@@ -3515,9 +3516,9 @@ hr {
   width: 500px;
   font-size: 40px;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid rgb(255, 255, 255);
   background: none;
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3541,8 +3542,8 @@ hr {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #095998;
   text-align: center;
   border-radius: 50%;
   font-size: 28px;
@@ -3594,6 +3595,53 @@ hr {
   .slider-height {
     height: 500px;
   }
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin: 30px 0;
+border: 1px solid rgb(205, 205, 205);
+  padding: 27px 30px;
+  margin: 0px auto 30px;
+  text-align: left;
+  width: 100%;
+}
+
+
+.faq-list .faq-heading::before {
+  content: '+';
+ font-size: 30px;
+  display: block;
+  position: absolute;
+ right:0;
+  top: -8px;
+color:#c2c2c2;
+}
+
+.faq-list .the-active .faq-heading::before {
+  content: '-';
+
+}
+
+.faq-heading {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+font-weight: 700;
+margin:0;
+}
+
+.faq-heading:hover {
+  color: #005a98;
+}
+
+.faq-text {
+  display: none;
+  margin-top: 20px;
 }
 
 /* line 18, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
